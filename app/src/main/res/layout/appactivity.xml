@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appActivity"
+    android:padding="2dp"
+    android:background="#eeeeee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.Space
+        android:id="@+id/centerView"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_above="@id/centerView"
+        android:layout_toStartOf="@id/centerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/addA"
+            android:text="Add Fragment A"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/removeA"
+            android:text="Remove Fragment A"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_above="@id/centerView"
+        android:layout_toEndOf="@id/centerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/addB"
+            android:text="Add Fragment B"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/removeB"
+            android:text="Remove Fragment B"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

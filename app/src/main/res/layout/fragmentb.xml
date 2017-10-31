@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:text="Fragment B"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="#ffcdd2"
+    android:layout_below="@id/centerView"
+    android:layout_toEndOf="@id/centerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</TextView>
